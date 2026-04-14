@@ -12,6 +12,7 @@ include_directories(include)
 
 file(GLOB_RECURSE SRC_FILES
     src/input/*.cpp
+    src/logging/*.cpp
 )
 
 # Windows 平台：添加 WASAPI 实现 + 链接系统库
