@@ -1,0 +1,3 @@
+[submodule "core/rnnoise"]
+	path = core/rnnoise
+	url = https://github.com/CloudSwordSage/rnnoise.git

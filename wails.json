@@ -1,0 +1,21 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "AudioPipe",
+  "outputfilename": "AudioPipe",
+  "frontend:dir": "app",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "CloudSwordSage",
+    "email": "zlf100518@163.com"
+  },
+  "postBuildHooks": {
+    "windows/amd64": "powershell -Command 'New-Item -Path ../../dist -ItemType Directory -Force; Copy-Item -Path * -Destination ../../dist -Recurse -Force'",
+    "windows/arm64": "powershell -Command 'New-Item -Path ../../dist -ItemType Directory -Force; Copy-Item -Path * -Destination ../../dist -Recurse -Force'",
+    "darwin/amd64": "bash -c \"mkdir -p ../../dist/ && cp -R * ../../dist/\"",
+    "darwin/arm64": "bash -c \"mkdir -p ../../dist/ && cp -R * ../../dist/\"",
+    "linux/amd64": "bash -c \"mkdir -p ../../dist/ && cp -R * ../../dist/\""
+  }
+}

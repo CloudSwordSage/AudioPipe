@@ -1,0 +1,17 @@
+# 样本
+demo/
+
+# IDE
+.vscode/
+
+# wails
+build/bin
+node_modules
+app/dist
+
+# 输出
+dist/
+output/
+
+# core 编译
+core/build/
