@@ -17,7 +17,7 @@ namespace audio_pipe {
     // 枚举设备：自动路由到平台实现
     std::vector<InputDeviceInfo> enumerate_input_devices() {
 #ifdef _WIN32
-        return ::enumerate_input_devices(); // WASAPI 枚举函数
+        return wasapi_enumerate_input_devices(); // WASAPI 枚举函数
 #else
         throw std::runtime_error("Unsupported platform");
 #endif
