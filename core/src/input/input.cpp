@@ -6,7 +6,7 @@
  * @Desc    : 音频输入流工厂集合
  */
 
-#include "audio_pipe/input.hpp"
+#include "audio_pipe/input/input.hpp"
 
 #ifdef _WIN32
 // Windows 平台：包含 WASAPI 实现

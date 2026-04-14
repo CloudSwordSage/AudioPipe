@@ -8,7 +8,7 @@
 
 #pragma once
 
-#include "audio_pipe/input.hpp" // 引入抽象基类
+#include "audio_pipe/input/input.hpp" // 引入抽象基类
 #include <atomic>
 #include <mutex>
 #include <condition_variable>
