@@ -149,7 +149,7 @@ namespace {
 
 namespace audio_pipe {
 
-    std::vector<InputDeviceInfo> enumerate_input_devices() {
+    std::vector<InputDeviceInfo> wasapi_enumerate_input_devices() {
         ComScope com_scope(COINIT_MULTITHREADED);
 
         ComPtr<IMMDeviceEnumerator> enumerator;
