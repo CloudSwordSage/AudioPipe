@@ -107,9 +107,6 @@ namespace audio_pipe {
             msg.c_str()
         );
 
-        // 输出到控制台
-        std::cout << line << std::endl;
-
         // 输出到文件
         if (file_.is_open()) {
             file_ << line << std::endl;
